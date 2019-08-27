@@ -1,0 +1,19 @@
+header{
+	z-index: 1;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem;
+	width: 100%;
+	nav{
+		width: 50%;
+		ul{
+			display: flex;
+			align-items:  baseline;
+			li{
+				padding-right: 5rem; 
+			}
+		}
+	}
+}
