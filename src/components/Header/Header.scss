@@ -1,19 +1,34 @@
+@import '../../assets/css/scss/variables';
+
 header{
 	z-index: 1;
 	position: absolute;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 4rem;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 	width: 100%;
 	nav{
 		width: 50%;
 		ul{
 			display: flex;
-			align-items:  baseline;
+			align-items:  flex-end;
 			li{
 				padding-right: 5rem; 
+				padding-bottom: 0;
+				font-size: 1.25rem;
 			}
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			height: 1px;
+			vertical-align: bottom;
+			width: 100%;
+			margin-left: -105%;
+			top: 56%;
+			border-top: 1px solid rgba(white,.5);
 		}
 	}
 }

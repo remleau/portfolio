@@ -1,0 +1,53 @@
+@import '../../assets/css/scss/variables';
+
+footer{
+	background-color: $couleur_gris_pale;
+	padding-top: 4rem;
+	margin-top: 10rem;
+	padding-bottom: 4rem;
+	width: 100%;
+	.banner{
+		border-radius: 3px;
+		padding: 4rem 3rem;
+		margin-top: -9rem;
+		margin-bottom: 3rem;
+		box-shadow: 0 0 5px 3px rgba(darken($couleur_gris_pale,10%),.5);
+		background-color: white;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		p{
+			padding-bottom: 0;
+			font-style: italic;
+			color:$couleur_vert;
+		}
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 50%;
+		ul{
+			display: flex;
+			align-items:  flex-end;
+			li{
+				padding-right: 5rem; 
+				padding-bottom: 0;
+			}
+		}
+	}
+	.copyright{
+		padding-top: 3rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		p{
+			font-size: .9rem;
+			padding-bottom: 0;
+		}
+	}
+	*{
+		color: darken(#f5f5f5,25%);
+	}
+}

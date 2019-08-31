@@ -5,14 +5,15 @@ import './Header.scss';
 const Header = () => {
 
   return (
-    <header data-scroll-section>
+    <header className="wrapper">
       <nav>
         <ul>
-          <li>Projet<sup>10</sup></li>
-          <li>À propos</li>
-          <li>Contact</li>
+          <li><a>Projet<sup>10</sup></a></li>
+          <li><a>À propos</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </nav>
+      <a className="cta invert">Call to action</a>
     </header>
   );
 }

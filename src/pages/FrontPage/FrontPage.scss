@@ -1,10 +1,85 @@
+@import '../../assets/css/scss/variables';
+
 .hero{
 	height: 100vh;
 	display:flex;
-	justify-content: center;
 	align-items:center;
-	background-image:url('../../assets/img/hero.jpg');
+	.overlay.image{
+		background-image:url('../../assets/img/hero.jpg');
+		background-size: cover;
+	}
 	.texte{
-		width: 55%;
+		width: 60%;
+		padding-top: 1rem;
+		p{
+			padding: 2rem 0rem;
+		}
+		h1{
+			font-size: 4rem;
+			font-weight: 600;
+			color: aliceblue;
+			span{
+				display: block;
+			}
+			.light{
+				font-weight: 100;
+				color:aliceblue;
+				padding: .5rem;
+				display: inline-block;
+				background: rgb(21,163,128);
+				background: linear-gradient(45deg, $couleur_vert 0%, lighten($couleur_vert,10%) 90%);
+			}
+		}
+	}
+	.liens-vedette{
+		padding: 2rem;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 65%;
+		background-color: $couleur_noir;
+		display: flex;
+		justify-content: space-between;
+		z-index: 1;
+		> div{
+			width: 50%;
+			overflow: hidden;
+			&:first-child{
+				padding-right: 2rem;
+			}
+			&:last-of-type{
+				padding-left: 2rem;
+			}
+		}
+		h4{
+			color:white;
+			padding-bottom: 1rem;
+		}
+		p{
+			font-weight: 100;
+			font-size: .925rem;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.about,
+.projets{
+	padding: 5rem 0rem;
+	padding-top: 12rem;
+	background-color: white;
+	.texte{
+		width: 80%;
+		margin:auto;
+	}
+	h2{
+		padding-bottom: 2rem;
+		overflow: hidden;
+	}
+	p{
+		color:grey;
+		&:last-of-type{
+			padding-bottom: 2rem;
+		}
 	}
 }

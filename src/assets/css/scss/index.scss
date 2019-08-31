@@ -4,6 +4,7 @@
 
 .overlay{ position: absolute; height: 100%; width: 100%; top: 0; left: 0; z-index: 0; }
 .overlay.gris-fonce{ background-color: rgba($couleur_noir,.75); }
+.overlay.full.gris-fonce{ background-color: $couleur_noir; }
 
 @mixin cta{ 
 	border-radius: 3px;
@@ -16,10 +17,24 @@
 	font-size: .9rem;
 	text-transform: uppercase;
 	cursor: pointer;
+	transition: all 0.5s ease;
+	&:hover{
+		background-color: lighten($couleur_vert,5%);
+	}
 }
 
 .cta{
 	@include cta;
+}
+
+.cta.invert{
+	@include cta;
+	background-color:transparent;
+	border: 1px solid $couleur_vert;
+	color: $couleur_vert;
+	&:hover{
+		color:white;
+	}
 }
 
 .cta.vert{ background-color: $couleur_vert; }
@@ -43,3 +58,16 @@ input[type="submit"],
 button{ @include cta; padding-left: 0; padding: .75rem; border: none; font-family: 'Poppins', sans-serif; line-height: 1em; }
 input.error,
 textarea.error{ border-color:#cf2e2e !important; }
+
+main, footer, header, aside, section {
+	display: block;
+}
+
+.wrapper{
+	padding-right: 7rem;
+	padding-left: 7rem;
+}
+
+.has-scroll-smooth body {
+    overflow: hidden;
+}
