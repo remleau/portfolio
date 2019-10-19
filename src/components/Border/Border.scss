@@ -1,0 +1,34 @@
+@import '../../assets/css/scss/variables';
+
+$border: 7px;
+
+.borders{
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	div{
+		z-index: 1000;
+		position: absolute;
+		background-color: $couleur_gris_pale;
+	}
+	.top{
+		top:0;
+		width: 100%;
+		height: $border;
+	}
+	.bottom{
+		bottom:0;
+		width: 100%;
+		height: $border;
+	}
+	.left{
+		left:0;
+		height: 100%;
+		width: $border;
+	}
+	.right{
+		right:0;
+		height: 100%;
+		width: $border;
+	}
+}
