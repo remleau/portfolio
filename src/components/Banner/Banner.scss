@@ -1,0 +1,38 @@
+@import '../../assets/css/scss/variables';
+
+.banner{
+	height: 100vh;
+	display:flex;
+	align-items:center;
+	overflow: hidden;
+	.wrapper{
+		width: 100%;
+	}
+	.overlay.bg-image{
+		background-image: url('./../../assets/img/dot-grid.png');
+		// background: linear-gradient(180deg, rgba(245,245,245,1) 50%, rgba(21,163,128,1) 50%);
+	}
+	.overlay.half-green{
+		background-color: $couleur_vert;
+		height: 50%;
+		bottom: 0;
+		top: inherit;
+	}
+	.texte{
+		text-align: center;
+		p{
+			padding: 2rem 0rem;
+		}
+		h1{
+			font-size: 5.5rem;
+			font-weight: 800;
+			line-height: 1.15em;
+			text-transform: inherit;
+			color: $couleur_noir;
+			font-family: 'Poppins', sans-serif;
+			span{
+				display: block;
+			}
+		}
+	}
+}
