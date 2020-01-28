@@ -20,6 +20,9 @@ header{
 				font-size: 1.25rem;
 				a{
 					color: $couleur_noir;
+					&.is-active{
+						color: $couleur_vert;
+					}
 				}
 			}
 		}

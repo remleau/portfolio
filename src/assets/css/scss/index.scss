@@ -71,31 +71,3 @@ main, footer, header, aside, section {
 .has-scroll-smooth body {
     overflow: hidden;
 }
-
-
-.hero{
-	height: 100vh;
-	display:flex;
-	align-items:center;
-	.overlay.gradient{
-		background: rgb(245,245,245);
-		background: linear-gradient(180deg, rgba(245,245,245,1) 50%, rgba(21,163,128,1) 50%);
-	}
-	.texte{
-		text-align: center;
-		p{
-			padding: 2rem 0rem;
-		}
-		h1{
-			font-size: 5.5rem;
-			font-weight: 800;
-			line-height: 1.15em;
-			text-transform: inherit;
-			color: $couleur_noir;
-			font-family: 'Poppins', sans-serif;
-			span{
-				display: block;
-			}
-		}
-	}
-}

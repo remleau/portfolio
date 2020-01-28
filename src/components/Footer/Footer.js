@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="wrapper" id="footer">
-      <div className="banner" data-scroll data-scroll-position="bottom" data-scroll-speed="-1">
+      <div className="read-more" data-scroll data-scroll-position="bottom" data-scroll-speed="-1">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada at sapien nec ornare.</p>
         <a className="cta">Call to action</a>
       </div>
