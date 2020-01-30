@@ -1,0 +1,19 @@
+@import '../../assets/css/scss/variables';
+
+.socials{
+	display: flex;
+	margin: 0rem -1rem;
+	> *{
+		padding: 0rem 1rem;
+	}
+	svg{
+		path{
+			fill: #444 !important;
+		}
+		&:hover{
+			path{
+				fill: $couleur_vert !important;
+			}
+		}
+	}
+}
