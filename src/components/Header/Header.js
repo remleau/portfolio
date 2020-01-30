@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+import Socials from './../Socials';
+
 import './Header.scss'; 
 
 const Header = () => {
@@ -15,7 +17,7 @@ const Header = () => {
           <li><NavLink to={'/contact'} activeClassName='is-active'>Contact</NavLink></li>
         </ul>
       </nav>
-      <NavLink to={'/'} className="cta invert">Get in touch</NavLink>
+      <Socials />
     </header>
   );
 }

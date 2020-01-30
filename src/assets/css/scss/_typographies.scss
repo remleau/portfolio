@@ -18,6 +18,10 @@ h2{
   font-weight: 500;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
+  overflow: hidden;
+  &.noir{
+    color: #444;
+  }
   &.vert{
     color: $couleur_vert;
     &:after{
@@ -41,6 +45,9 @@ h3{
   font-weight: 500;
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
+  &.noir{
+    color: #444;
+  }
   &.vert{
     color: $couleur_vert;
   }
@@ -71,7 +78,6 @@ p,li{
   font-size: 1.15rem;
   font-weight: 300;
   padding-bottom: 1rem;
-  color:white;
 }
 
 li{

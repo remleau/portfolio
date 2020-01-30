@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="wrapper" id="footer">
       <div className="read-more" data-scroll data-scroll-position="bottom" data-scroll-speed="-1">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada at sapien nec ornare.</p>
+        <p>“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”</p>
         <a className="cta">Call to action</a>
       </div>
       <nav>

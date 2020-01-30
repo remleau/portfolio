@@ -14,16 +14,16 @@ import AboutPage from './../pages/AboutPage';
 import ProjectPage from './../pages/ProjectPage';
 import ContactPage from './../pages/ContactPage';
 
-const App = () => {
+const App = () => { 
 
 	const scrollRef = React.createRef();
 
-	useEffect(() => {
-		const scroll = new locomotiveScroll({
-			el: scrollRef.current,
-			smooth: true
-		});
-	});
+	// useEffect(() => {
+	// 	const scroll = new locomotiveScroll({
+	// 		el: scrollRef.current,
+	// 		smooth: true
+	// 	});
+	// });
 
 	return (
 		<main className="App" ref={scrollRef}>
