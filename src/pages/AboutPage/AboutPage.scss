@@ -16,4 +16,31 @@
 			padding: initial;
 		}
 	}
+	.projects{
+		position: relative;
+		h1{
+			z-index: 1;
+			font-weight: bolder;
+			font-size: 3rem;
+			padding-bottom: 0.5rem;
+		}
+		a{
+			z-index: 1;
+			font-weight: 700;
+			font-size: 1.5rem;
+			color: $couleur_vert;
+			text-decoration: underline;
+		}
+		.action{
+			position: absolute;
+			top: 15%;
+		}
+		.image{
+			width: 95%;
+			margin-left: auto;
+			height: 600px;
+			background-size: cover;
+			background-position: center;
+		}
+	}
 }

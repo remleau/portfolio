@@ -6,7 +6,13 @@ import './AboutPage.scss';
 import Banner from './../../components/Banner';
 import Socials from './../../components/Socials';
 
+import Background from '../../assets/img/hero.jpg';
+
 const AboutPage = () => {
+
+  let style_project = {
+    backgroundImage: `url(${Background})`,
+  }
   
   return (
     <div class="about-page">
@@ -21,6 +27,15 @@ const AboutPage = () => {
             <p>N'hésiter pas à <div className="link">me contacter</div> dès maintenant. Je me situe près de Montréal, Je suis présentement pigiste web et près a discuter de votre projet web.</p>
           </div>
           <Socials />
+        </div>
+        <div className="projects">
+          <div className="action">
+            <h1 className="vert">PROJETS <sup>10</sup></h1>
+            <a className="noir">Mes projets</a>
+          </div>
+          <div className="image" style={style_project}>
+            <div className="overlay gris-fonce"></div>
+          </div>
         </div>
       </div>
     </div>
