@@ -29,11 +29,10 @@ const AboutPage = () => {
           <Socials />
         </div>
         <div className="projects">
-          <div className="action">
-            <h1 className="vert">PROJETS <sup>10</sup></h1>
-            <a className="noir">Mes projets</a>
-          </div>
           <div className="image" style={style_project}>
+            <div className="action">
+              <h1 className="vert">PROJETS <sup>10</sup></h1>
+            </div>
             <div className="overlay gris-fonce"></div>
           </div>
         </div>
