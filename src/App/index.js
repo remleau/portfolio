@@ -1,5 +1,5 @@
 import React, { useEffect  } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
 
 import '../assets/css/scss/index.scss';
 
@@ -16,17 +16,22 @@ import ContactPage from './../pages/ContactPage';
 
 const App = () => { 
 
+	const { pathname } = useLocation();
 	const scrollRef = React.createRef();
 
-	// useEffect(() => {
-	// 	const scroll = new locomotiveScroll({
-	// 		el: scrollRef.current,
-	// 		smooth: true
-	// 	});
-	// });
+	useEffect(() => {
+		let scroll = new locomotiveScroll({
+			el: scrollRef.current,
+			smooth: true
+		});
+		setTimeout(() => { scroll.update();	}, 100);
+		return () => {
+			if (scroll) scroll.destroy();
+		}
+	}, [pathname]);
 
 	return (
-		<main className="App" ref={scrollRef}>
+		<main className="App" data-scroll-section ref={scrollRef}>
 			<Border />
 			<Header />
 				<Switch>
