@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react';
-import locomotiveScroll from "locomotive-scroll";
+import React from 'react';
 
 import './AboutPage.scss'; 
 

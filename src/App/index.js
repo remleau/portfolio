@@ -20,14 +20,14 @@ const App = () => {
 	const scrollRef = React.createRef();
 
 	useEffect(() => {
-		let scroll = new locomotiveScroll({
-			el: scrollRef.current,
-			smooth: true
-		});
-		setTimeout(() => { scroll.update();	}, 100);
-		return () => {
-			if (scroll) scroll.destroy();
-		}
+	// 	let scroll = new locomotiveScroll({
+	// 		el: scrollRef.current,
+	// 		smooth: true
+	// 	});
+	// 	setTimeout(() => { scroll.update();	}, 100);
+	// 	return () => {
+	// 		if (scroll) scroll.destroy();
+	// 	}
 	}, [pathname]);
 
 	return (

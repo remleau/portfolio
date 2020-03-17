@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="wrapper" id="footer">
       <div className="read-more" data-scroll data-scroll-position="bottom" data-scroll-speed="-1">
         <p>“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”</p>
-        <a className="cta">Call to action</a>
+        <a href="" className="cta">Call to action</a>
       </div>
       <nav>
         <ul data-scroll data-scroll-position="bottom" data-scroll-speed="2">
@@ -22,7 +22,7 @@ const Footer = () => {
           <p>Rémy Groleau Copyright © 2019 tous droits réservés</p>
         </div>
         <div>
-          <p><a href="https://locomotive.ca/fr">Special thanks for these guys! #scroll</a></p>
+          <p><a href="https://locomotive.ca/fr" target="_blank" rel="noopener noreferrer">Special thanks for these guys! #scroll</a></p>
         </div>
       </div>
     </footer>
