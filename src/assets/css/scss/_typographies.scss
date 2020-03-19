@@ -78,6 +78,9 @@ p,li{
   font-size: 1.15rem;
   font-weight: 300;
   padding-bottom: 1rem;
+  &:last-child{
+    padding-bottom: 0rem;
+  }
 }
 
 li{

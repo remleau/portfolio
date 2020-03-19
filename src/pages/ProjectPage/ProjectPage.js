@@ -13,11 +13,30 @@ const AboutPage = () => {
   
   var settings = {
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '0px',
+    centerPadding: '60px',
+    arrows: true,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />
   };
+
+  function NextArrow(props) {
+    return (
+      <button {...props} >
+        <img src={require('../../assets/img/arrow_forward.svg')} />
+      </button>
+    );
+  }
+  
+  function PrevArrow(props) {
+    return (
+      <button {...props} >
+        <img src={require('../../assets/img/arrow_backward.svg')} />
+      </button>
+    );
+  }
 
   return (
     <div className="project-page">
@@ -29,15 +48,16 @@ const AboutPage = () => {
             <p>Duis vel tellus ac nisi lobortis ultrices. Integer risus arcu, molestie in egestas nec, varius eu dolor.</p>
             <p>Nunc vulputate justo et justo sodales facilisis. Donec id purus id quam rutrum aliquam.</p>
           </div>
-          <div className="slider-projets">
-            <Slider {...settings}>
-              <Project />
-              <Project />
-              <Project />
-              <Project />
-            </Slider>
-          </div>
         </div>
+      </div>
+      <div className="slider-projets">
+        <Slider {...settings}>
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+        </Slider>
+        <p className="bg-title">Mes projets</p>
       </div>
     </div>
   );

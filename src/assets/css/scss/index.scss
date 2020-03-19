@@ -91,18 +91,40 @@ main, footer, header, aside, section {
   }
 }
 
-.cursor {
-	pointer-events: none;
-	
-	&__ball {
-		position: fixed;
-		top: 0;
-		left: 0;
-		mix-blend-mode: difference;
-		z-index: 1000;
-		
-		circle {
-			fill: #f7f8fa;
+.slick-slider{
+	width: 100%;
+	z-index: 1;
+	overflow: hidden;
+	.slick-arrow {
+		left: inherit;
+		right: inherit;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background-color: $couleur_gris_pale;
+		border: 1px solid $couleur_vert;
+		z-index: 1;
+		&:hover {
+			background-color: $couleur_gris_pale;
 		}
-	}      
-} 
+		&:before {
+			display: none;
+		}
+	}
+	.slick-prev {
+		left: 75px;
+	}
+	.slick-next {
+		right: 75px;
+		img {
+			transform: rotate(-180deg);
+		}
+	}
+}
+
+.bg-title {
+	font-size: 10rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: absolute;
+}
