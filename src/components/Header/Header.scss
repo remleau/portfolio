@@ -6,22 +6,50 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	width: 100%;
+	&.wrapper {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 	nav{
 		width: 50%;
 		ul{
 			display: flex;
 			align-items:  flex-end;
 			li{
-				padding-right: 5rem; 
+				padding-right: 2rem; 
 				padding-bottom: 0;
-				font-size: 1.25rem;
+				font-size: 1.05rem;
+				font-weight: 400;
 				a{
-					color: $couleur_noir;
+					color: darken($couleur_gris_pale,20%);
+					&:after {
+						opacity: 0;
+						content: "";
+						position: absolute;
+						height: 1px;
+						vertical-align: bottom;
+						width: 100%;
+						bottom: -15px;
+						margin-left: -100%;
+						border-top: 1px solid $couleur_vert;
+						transition: all 0.15s ease-in-out;
+					}
+					&:hover {
+						color: darken($couleur_gris_pale,30%);
+						&:after{
+							bottom: -10px;
+							opacity: 1;
+						}
+					}
 					&.is-active{
 						color: $couleur_vert;
+						&:after{
+							opacity: 1;
+							bottom: -10px;
+						}
 					}
 				}
 			}

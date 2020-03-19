@@ -14,7 +14,7 @@ const Project = () => {
   return (
     <div className="projet">
       <div className="texte">
-        <h2>Nom propjet</h2>
+        <h2 className="vert">Nom propjet</h2>
         <p>Nunc vulputate justo et justo sodales facilisis. Donec id purus id quam rutrum aliquam.</p>
       </div>
       <div className="image" style={style_project}>
