@@ -12,7 +12,6 @@ import Footer from './../components/Footer';
 import FrontPage from './../pages/FrontPage';
 import AboutPage from './../pages/AboutPage';
 import ProjectPage from './../pages/ProjectPage';
-import ContactPage from './../pages/ContactPage';
 
 const App = () => { 
 
@@ -38,7 +37,6 @@ const App = () => {
 					<Route exact path='/' component={FrontPage} />
 					<Route exact path='/a-propos/' component={AboutPage} />
 					<Route exact path='/projets/' component={ProjectPage} />
-					<Route exact path='/contact/' component={ContactPage} />
 				</Switch>
 			<Footer />
 		</main>

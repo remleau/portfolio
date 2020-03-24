@@ -12,13 +12,16 @@ const Project = () => {
   }
 
   return (
-    <div className="projet">
-      <div className="texte">
-        <h2 className="vert">Nom propjet</h2>
-        <p>Nunc vulputate justo et justo sodales facilisis. Donec id purus id quam rutrum aliquam.</p>
-      </div>
-      <div className="image" style={style_project}>
-        <div className="overlay gris-fonce"></div>
+    <div className="wrap-project">
+      <div className="overlay-project"></div>
+      <div className="projet">
+        <div className="image" style={style_project}>
+          <div className="overlay gris-fonce"></div>
+        </div>
+        <div className="texte">
+          <h2 className="vert">Nom propjet</h2>
+          <p>Nunc vulputate justo et justo sodales facilisis. Donec id purus id quam rutrum aliquam. <div className="link">me contacter</div></p>
+        </div>
       </div>
     </div>
   );

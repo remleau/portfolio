@@ -57,7 +57,6 @@ const AboutPage = () => {
           <Project />
           <Project />
         </Slider>
-        <p className="bg-title">Mes projets</p>
       </div>
     </div>
   );

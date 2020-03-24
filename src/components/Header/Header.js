@@ -14,7 +14,6 @@ const Header = () => {
           <li><NavLink to={'/'} exact activeClassName='is-active'>Accueil</NavLink></li>
           <li><NavLink to={'/projets'} activeClassName='is-active'>Projet <sup>10</sup></NavLink></li>
           <li><NavLink to={'/a-propos'} activeClassName='is-active'>À propos</NavLink></li>
-          <li><NavLink to={'/contact'} activeClassName='is-active'>Contact</NavLink></li>
         </ul>
       </nav>
       <Socials />

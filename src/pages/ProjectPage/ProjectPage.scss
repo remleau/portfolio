@@ -11,6 +11,9 @@
 			}
 			p{
 				padding-bottom: .5rem;
+				&:last-child {
+					padding-bottom: 0;
+				}
 			}
 		}
 	}
@@ -22,7 +25,7 @@
 	}
 
 	.bg-title {
-		color: rgba($couleur_noir, .025%);
+		color: rgba($couleur_noir, .5%);
 	}
 
 }
