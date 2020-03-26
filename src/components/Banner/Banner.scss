@@ -13,6 +13,7 @@
 		// background: linear-gradient(180deg, rgba(245,245,245,1) 50%, rgba(21,163,128,1) 50%);
 	}
 	.overlay.half-green{
+		transition: all 500ms ease-out;
 		background-color: $couleur_vert;
 		height: 50%;
 		bottom: 0;
@@ -30,6 +31,7 @@
 			padding: 2rem 0rem;
 		}
 		h1{
+			transition: all 500ms ease-out;
 			font-size: 5.5rem;
 			font-weight: 800;
 			line-height: 1.15em;

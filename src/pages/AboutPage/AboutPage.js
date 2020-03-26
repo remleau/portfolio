@@ -14,7 +14,7 @@ const AboutPage = () => {
   }
   
   return (
-    <div class="about-page">
+    <div className="about-page">
       <Banner title="À propos" description="" />
       <div className="wrapper">
         <div className="texte">
@@ -23,7 +23,7 @@ const AboutPage = () => {
             <p>Perfectionniste et créatif, je m’investis pleinement dans ce que j’entreprends.</p>
             <p>Je me considère comme développeur web. J’aime les défis et je me débrouille toujours pour les surmonter.</p>
             <p>Si vous recherchez quelqu’un de dynamique, allumé et qui a le cœur à l’ouvrage, je suis la personne qu’il vous faut.</p>
-            <p>N'hésiter pas à <div className="link">me contacter</div> dès maintenant. Je me situe près de Montréal, Je suis présentement pigiste web et près a discuter de votre projet web.</p>
+            <p>N'hésiter pas à <span className="link">me contacter</span> dès maintenant. Je me situe près de Montréal, Je suis présentement pigiste web et près a discuter de votre projet web.</p>
           </div>
           <Socials />
         </div>

@@ -59,6 +59,10 @@ button{ @include cta; padding-left: 0; padding: .75rem; border: none; font-famil
 input.error,
 textarea.error{ border-color:#cf2e2e !important; }
 
+.App{
+	overflow: hidden;
+}
+
 main, footer, header, aside, section {
 	display: block;
 }
@@ -128,3 +132,70 @@ main, footer, header, aside, section {
 	font-weight: bold;
 	position: absolute;
 }
+
+
+
+
+
+
+
+
+
+.slide-enter,
+.slide-exit {
+  transition: all 1000ms ease-out;
+}
+
+.slide-enter {
+	.banner{
+		.overlay.half-green{
+			height: 50%;
+		}
+		.texte{
+			h1{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.slide-enter.slide-enter-active {
+	.banner{
+		.overlay.half-green{
+			height: 0%;
+			transition: all 250ms ease-out;
+		}
+		.texte{
+			h1{
+				transition: all 250ms ease-out;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+// .slide-exit {
+// 	.banner{
+// 		.overlay.half-green{
+// 			height: 0%;
+// 		}
+// 		.texte{
+// 			h1{
+// 				opacity: 0;
+// 			}
+// 		}
+// 	}	
+// }
+
+// .slide-exit-active {
+// 	.banner{
+// 		.overlay.half-green{
+// 			height: 0%;
+// 		}
+// 		.texte{
+// 			h1{
+// 				opacity: 0;
+// 			}
+// 		}
+// 	}
+// }

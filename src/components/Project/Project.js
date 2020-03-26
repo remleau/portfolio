@@ -20,7 +20,7 @@ const Project = () => {
         </div>
         <div className="texte">
           <h2 className="vert">Nom propjet</h2>
-          <p>Nunc vulputate justo et justo sodales facilisis. Donec id purus id quam rutrum aliquam. <div className="link">me contacter</div></p>
+          <p>Nunc vulputate justo et justo sodales facilisis. Donec id purus id quam rutrum aliquam. <span className="link">me contacter</span></p>
         </div>
       </div>
     </div>
