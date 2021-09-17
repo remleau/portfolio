@@ -1,0 +1,29 @@
+header {
+  @apply fixed w-full;
+  @apply bg-darkBlack bg-opacity-95;
+
+  h1 {
+    @apply pb-0;
+  }
+
+  .container {
+    @apply flex items-center justify-between;
+    @apply py-16;
+  }
+
+  // global nav
+  nav {
+    ul {
+      @apply flex;
+      @apply -mx-2;
+
+      li {
+        @apply mx-2;
+
+        a {
+          @apply text-sm font-bold;
+        }
+      }
+    }
+  }
+}

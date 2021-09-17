@@ -1,0 +1,36 @@
+.swiper {
+  &-container {
+    @apply w-full h-full;
+  }
+
+  &-wrapper {
+    @apply w-full h-full;
+  }
+
+  &-slide {
+
+  }
+}
+
+.slider {
+  &-front-page {
+    @apply -mt-40;
+
+    height: 500px;
+
+    .slider-text {
+      p {
+        @apply relative pb-2 mb-6;
+
+        &:after {
+          @apply absolute bottom-0 block w-full h-px bg-grey bg-opacity-75;
+          content: '';
+        }
+      }
+    }
+
+    .swiper-slide {
+      @apply bg-yellow w-full h-full;
+    }
+  }
+}

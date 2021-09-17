@@ -1,0 +1,47 @@
+h1 {
+  @apply text-grey text-4xl leading-10;
+  @apply pb-6;
+
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 800;
+
+  span {
+    @apply text-darkBlack;
+  }
+}
+
+h2 {
+  @apply text-grey text-3xl leading-8;
+  @apply pb-5;
+
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  @apply text-grey text-2.25xl leading-7;
+  @apply pb-4;
+  
+  font-family: 'Urbanist', sans-serif;
+}
+
+h4 {
+  @apply text-grey text-2xl leading-6;
+  @apply pb-4;
+
+  font-family: 'Urbanist', sans-serif;
+}
+
+ul,ol {
+  li {
+    @apply text-grey;
+  }
+}
+
+p {
+  @apply text-grey pb-2 leading-6;
+}
+
+a {
+
+}

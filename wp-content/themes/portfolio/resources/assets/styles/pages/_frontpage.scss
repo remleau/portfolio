@@ -1,0 +1,8 @@
+.home {
+  .hero {
+    @apply w-full h-screen;
+    @apply flex items-center;
+
+    padding-bottom: 5rem;
+  }
+}

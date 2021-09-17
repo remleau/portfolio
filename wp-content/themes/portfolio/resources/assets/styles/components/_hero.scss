@@ -1,0 +1,15 @@
+.hero {
+  &-text {
+    @apply w-3/4;
+
+    h1 {
+      @apply text-6xl;
+
+      line-height: 1.1em;
+    }
+
+    p {
+      @apply text-2xl font-semibold;
+    }
+  }
+}
