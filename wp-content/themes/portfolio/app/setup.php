@@ -11,21 +11,20 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+  wp_enqueue_style( 'urbanist-gf', 'https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500;600;700;800&display=swap', false ); 
+  wp_enqueue_style( 'opensans-gf', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap', false ); 
 
-    wp_enqueue_style( 'urbanist-gf', 'https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;500;600;700;800&display=swap', false ); 
-    wp_enqueue_style( 'opensans-gf', 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap', false ); 
-    
-    // slider
-    wp_enqueue_style('swiper-css',  get_stylesheet_directory_uri() . '/assets/styles/swiper.min.css', false, null);
-    wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', ['jquery'], null, true);
+  // common css/js
+  wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+  wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
-    // common css/js
-    wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+  // slider
+  wp_enqueue_style('swiper-css',  get_stylesheet_directory_uri() . '/assets/styles/swiper.min.css', false, null);
+  // wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', ['jquery'], null, true);
 
-    if (is_single() && comments_open() && get_option('thread_comments')) {
-      wp_enqueue_script('comment-reply');
-    }
+  if (is_single() && comments_open() && get_option('thread_comments')) {
+    wp_enqueue_script('comment-reply');
+  }
 }, 100);
 
 /**

@@ -78,7 +78,8 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "postcss": "^8.0.0"
+    "postcss": "^8.0.0",
+    "swiper": "^6.7.5"
   },
   "stylelint": {
     "rules": {}

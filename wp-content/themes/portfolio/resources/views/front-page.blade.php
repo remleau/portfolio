@@ -12,6 +12,8 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide"><a class="" href=""></a></div>
+          <div class="swiper-slide"><a class="" href=""></a></div>
+          <div class="swiper-slide"><a class="" href=""></a></div>
         </div>
       </div>
 
