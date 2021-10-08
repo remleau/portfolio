@@ -14,18 +14,13 @@
 
 .slider {
   &-front-page {
-    @apply -mt-40;
+    @apply -mt-40 mb-48;
 
     height: 500px;
 
     .slider-text {
       p {
-        @apply relative pb-2 mb-6;
-
-        &:after {
-          @apply absolute bottom-0 block w-full h-px bg-grey bg-opacity-75;
-          content: '';
-        }
+        
       }
     }
 

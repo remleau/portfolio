@@ -1,0 +1,16 @@
+.socials {
+  > div {
+    @apply flex items-center -mx-2;
+
+    svg {
+      @apply mx-2;
+
+      width: 14px;
+      height: 14px;
+
+      path {
+        fill: theme('colors.grey');
+      }
+    }
+  }
+}

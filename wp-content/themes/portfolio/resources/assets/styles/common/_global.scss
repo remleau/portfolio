@@ -3,3 +3,8 @@
 body {
   @apply bg-darkBlack;
 }
+
+.bottom-line {
+  @apply relative pb-2 mb-6;
+  @apply border-b-1 border-grey border-opacity-25;
+}

@@ -1,3 +1,42 @@
 footer {
-  height: 500px;
+  @apply border-t-1 border-grey border-opacity-25;
+
+  margin-top: 12rem;
+
+  .container {
+    @apply relative py-16 flex items-center justify-between;
+
+    &:first-child {
+      @apply pb-6 pt-20;
+    }
+  }
+
+  p {
+    @apply text-xs pb-0;
+  }
+
+  .menu {
+    @apply text-xs;
+
+    nav {
+      ul {
+        @apply flex items-center -mx-2;
+
+        li {
+          @apply mx-2;
+        }
+      }
+    }
+  }
+
+  .quote {
+    @apply flex items-center;
+
+    svg {
+      @apply ml-2;
+
+      width: 25px;
+      height: 25px;
+    }
+  }
 }

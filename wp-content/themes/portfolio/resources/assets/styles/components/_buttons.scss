@@ -1,0 +1,27 @@
+.cta {
+  @apply relative inline-block px-6 py-3 mt-4;
+  @apply text-sm text-grey font-semibold;
+  @apply border border-grey;
+  @apply transition-all duration-300;
+
+  &:after {
+    @apply absolute block bg-yellow z-10;
+    @apply transition-all duration-300;
+
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      @apply text-yellow shadow-lg border-yellow;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -6,3 +6,84 @@
     padding-bottom: 5rem;
   }
 }
+
+.services {
+  @apply py-40 mt-12;
+
+  background-position: 175% 0%;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #121517;
+
+  .service {
+    @apply relative border border-grey border-opacity-0 bg-transparent bg-opacity-0;
+    @apply transition-all duration-150;
+    
+    width: 25%;
+    padding: 4%;
+
+    &-svg {
+      width: 50px;
+      height: 50px;
+
+      path {
+        stroke: theme('colors.grey');
+      }
+    }
+
+    &-title {
+      a {
+        @apply relative text-grey text-lg;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        @apply shadow-md border border-yellow border-opacity-50;
+        @apply bg-darkBlack cursor-pointer;
+
+        .service-svg {
+          path {
+            @apply transition-all duration-100 delay-75;
+            stroke: theme('colors.yellow');
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .container {
+    // @apply flex items-center justify-between;
+  }
+
+  &-image {
+    @apply relative mb-12;
+
+    .image {
+      @apply shadow-lg;
+
+      width: 100%;
+      height: 325px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .overlay {
+      @apply absolute w-full h-full z-10;
+      @apply bg-darkBlack bg-opacity-50;
+    }
+  }
+
+  &-text {
+    &.main-text {
+      @apply w-3/4;
+
+      p {
+        @apply text-lg leading-loose;
+      }
+    }
+  }
+}
